@@ -1,0 +1,3443 @@
+
+    :root {
+      --primary: #4A121A;
+      --primary-hover: #360d13;
+      --accent-green: #22C55E;
+      --bg-light-green: #F2FBF5;
+      --border-green: #DCFCE7;
+      --text-dark: #1F2937;
+      --text-muted: #6B7280;
+      --border-gray: #E5E7EB;
+      --card-bg: #FFFFFF;
+      --dark-black:rgb(0, 0, 0);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #FFFFFF;
+      color: var(--text-dark);
+      line-height: 1.5;
+      width: 100%;
+      /* max-width:1300px; */
+    }
+
+   *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    padding: 10px 8px;
+}
+
+/* ==========================
+TOP BAR
+========================== */
+
+.top-bar{
+    background:#7dc71d;
+    color:#111;
+    height:44px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 28px;
+}
+
+.phone{
+    font-size:20px;
+    font-weight:500;
+}
+
+.phone i{
+    margin-right:8px;
+}
+
+.announcement{
+    font-size:18px;
+    font-weight:500;
+}
+
+/* ==========================
+NAVBAR
+========================== */
+
+.navbar{
+
+    background:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    overflow: hidden;
+    padding:14px 25px;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.1);
+}
+
+/* Logo */
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-section img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+}
+
+.logo-section h2{
+    font-size:30px;
+    color:#333;
+    font-weight:600;
+}
+
+/* Menu */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:45px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#555;
+    font-size:22px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    border-bottom: 2px solid #7dc71d;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    color:#7dc71d;
+}
+
+.nav-links i{
+    font-size:14px;
+}
+
+/* Buttons */
+
+.nav-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.offer-btn{
+    text-decoration:none;
+
+    background:#a6db56;
+
+    color:#111;
+
+    padding:14px 25px;
+
+    border-radius:30px;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.offer-btn:hover{
+    transform:translateY(-3px);
+}
+
+.enroll-btn{
+
+    text-decoration:none;
+
+    background:#6e1200;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:30px;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.enroll-btn:hover{
+    background:#520d00;
+}
+  .dropdown {
+    position: relative;
+    width: 250px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    visibility: hidden;
+  }
+  .courses-btn {
+    padding: 12px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .menu li:hover {
+    background: #f0f8ff;
+    border-left: 3px solid #00c853;
+  }
+  /* Active item like in screenshot */
+  .menu li.active {
+    background: #f0f8ff;
+    border-left: 3px solid #00c853;
+  }
+ /* Hero Section */
+    .hero {
+        /* background-image: url(./imagep/c99.jpg);
+        background-size:400px 500px;
+        background-repeat: no-repeat;
+        background-position: right; */
+      display: grid;
+      grid-template-columns:550px 200px 550px;
+      column-gap:15px;
+      padding:10px 5px;
+      width:100%;
+      height: 700px;
+      margin:auto;
+      margin-top:20px;
+    }
+
+    .badge-offer {
+      display: inline-block;
+      background-color: var(--bg-light-green);
+      color: #374151;
+      padding: 0.4rem 1.2rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .hero-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+
+    .hero-heading {
+      font-size: 3.2rem;
+      font-weight: 900;
+      color: var(--text-dark);
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .hero-heading span {
+      color: var(--accent-green);
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    .hero-subtitle {
+      margin-top: 1.9rem;
+      color: var(--text-muted);
+      font-size:1rem;
+      width:80%;
+      /* margin-left: auto; */
+      /* margin-right: auto; */
+    }
+
+    /* .hero-subtitle{
+        width: 50%;
+        margin-left: 0px;
+    } */
+    .hero-subtitle strong {
+      color: var(--accent-green);
+    }
+
+    .cta-group {
+      width:95%;
+      display: flex;
+      justify-content:left;
+      gap: 1rem;
+      margin-top: 2rem;
+      margin-left: 0px;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #FFFFFF;
+      padding:10PX 20px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+
+    .btn-outline {
+      background-color: #FFFFFF;
+      color: var(--primary);
+      border: 1.5px solid var(--text-dark);
+      padding: 0.9rem 1.8rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+
+    /* Feature Grid Card */
+    .features-card {
+      width:510px;
+      margin-top: 40px;
+      margin:left;
+      background: var(--bg-light-green);
+      border: 1px solid var(--border-green);
+      border-radius: 12px;
+      padding:30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+
+    .feature-item {
+      /* display: flex;
+      align-items: center;
+      gap: 0.75rem; */
+      font-size:1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-align: left;
+    }
+
+    .feature-item p span{
+       color:var(--accent-green);
+       font-size:1.3rem ;
+    }  
+.offer-card{
+    margin-left:0px;
+    width:300px;
+    height:630px;
+    background:#fff;
+    border-radius:18px;
+    /* overflow:hidden; */
+    position:relative;
+    top: 30px;
+    right:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Ribbon */
+/* .ribbon{
+    position:absolute;
+    top:-2px;
+    right:-28px;
+    background:#f4a024;
+    color:#fff;
+    width:95px;
+    text-align:center;
+    padding:8px 0;
+    font-size:11px;
+    font-weight:bold;
+    transform:rotate(45deg);
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+} */
+
+/* independence */
+.independence{
+    background:#76c900;
+    color:#fff;
+    text-align:center;
+    padding:18px 10px;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.independence h3{
+    padding:15px;
+    font-size:22px;
+    line-height:1.2;
+}
+
+/* Regular fee */
+.fee-section{
+    text-align:center;
+    padding:20px 10px;
+}
+
+.fee-section p{
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.fee-section h4{
+    font-size:24px;
+    color:#000;
+    text-decoration:line-through;
+    text-decoration-color:red;
+    text-decoration-thickness:3px;
+}
+
+/* Price Box */
+.price-box{
+    width: 330px;
+    z-index: 1;
+    position:relative;
+    /* left: 500px; */
+    right: 30px;
+    background:#8dde37;
+    color:#fff;
+    text-align:center;
+    margin:0 15px;
+    border-radius:15px 15px;
+    padding:18px 10px 22px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.price-box p{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.price p{
+    font-size:50px;
+    font-weight:800;
+    margin:10px 0;
+}
+
+.price span{
+    font-size:20px;
+}
+
+.price-box button{
+    background:#6b0a00;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.price-box button:hover{
+    opacity:.9;
+}
+
+/* Footer */
+.offervalid{
+    text-align:center;
+    padding:25px 15px 30px;
+}
+
+.offervalid p{
+    font-weight:700;
+    margin-bottom:2px;
+}
+
+.offervalid h2{
+    color:#5c0000;
+    font-size:45px;
+    font-weight:800;
+}
+
+.offervalid sup{
+    font-size:15px;
+}
+.hero_ai{
+    height: 100%;
+    width: 100%;
+    background-image: url(./imagep/aiman.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+.boxcon{
+    
+    display: flex;
+    flex-direction: column;
+    gap:96px;
+    position: absolute;
+    top:140px;
+    left:1050px;
+}
+.transprant i{
+    font-size:33px;
+    color:#7cdd0d;
+}
+.transprant p {
+  color:rgb(0, 0, 0);
+  font-size:1.1rem;
+  font-weight:700;
+  /* text-transform:uppercase; */
+  /* letter-spacing:1px; */
+  /* text-shadow:1.5px 1.5px 1px rgb(0, 0, 0); */
+}
+.transprant{
+    /* background-image: url(./imagep/aiman.jpg);
+    background-repeat: no-repeat;
+    background-size:500px 400px; */
+    margin-left:100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding:15px;
+    height:80px;
+    width: 140px;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.24);
+    border:1px solid rgb(255, 255, 255);
+    /* box-shadow: 0px 0px 5px 1px rgb(230, 225, 225); */
+}
+/* .year-badge{
+    display:inline-block;
+    margin-top:15px;
+    border:1px dashed #c66;
+    color:#5c0000;
+    padding:8px 18px;
+    border-radius:10px;
+    font-weight:bold;
+} */
+
+     .sec1card{
+    height:88px;
+    width:150px;
+    margin-top:20px;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    /* margin-bottom: 20px; */
+    border-radius:8px;
+    /* border-radius:30px 5px 30px 5px; */
+    background-color:white;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 6px 0px rgb(142, 142, 142);
+    /* z-index: 1; */
+}
+.course{
+    width:40%;
+    height:100%;
+}
+.para{
+    width:60%;
+}
+.para{
+    font-size:10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page1{
+    display: flex;
+    justify-content:center;
+    gap:35px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.second_header{
+    text-align: center;
+    /* position: relative; */
+    margin-top:40px;
+    margin-bottom:30px;
+    /* color: rgb(17, 17, 17); */
+    /* text-shadow:1px 1px 1px black; */
+}
+.headspan{
+    background-color:rgba(129, 255, 3, 0.669);
+    border-radius:30px;
+    padding:4px 8px;
+}
+.hari{
+    /* margin-top:1000px; */
+    font-size:30px;
+    letter-spacing: 1px;
+    text-align: justify;
+    width: 50%;
+    margin:100px auto;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4+p{
+    /* margin-top:100px; */
+    width:82%;
+    margin:100px auto;
+    text-align:center;
+    font-size:17px;
+    /* line-height:32px; */
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing:2px;
+    opacity: 0.9;
+
+}
+.fsr{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    border-radius: 10px;
+    margin:  10px auto;
+    padding:5px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color:rgb(189, 183, 183);
+}
+.tab{
+    /* display: flex; */
+    justify-content:center;
+    align-items: center;
+    padding:30px 15px;
+    font-size:20px;
+    color: black;
+    font-weight:400;
+    text-align:center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif ;
+    border-right: 2px solid rgb(128, 125, 125);
+    background-color:  rgb(189, 183, 183);
+}
+.last{
+    border-right: 0px;
+}
+.twel{
+    background-color:rgba(175, 255, 94, 0.987) ;
+}
+.twel .tab{
+    background-color:rgba(175, 255, 94, 0.987) ;
+}
+.thirteen{
+    background-color: rgb(240, 240, 240);
+}
+.thirteen .tab{
+    background-color:rgb(240, 240, 240) ;
+}
+.eleven .tab{
+    font-weight:bolder;
+    /* font-size:22px; */
+}
+.dark{
+    font-weight: bold;
+}
+.tablcon{
+    margin-top:100px;
+}
+.reviwe{
+position: relative;
+padding: 10px;
+width: 100%;
+margin-top:100px;
+height:800px;
+background-color:rgba(175, 255, 94, 0.987);
+}
+
+h5{
+    margin:50px;
+    font-weight:bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 3px black; 
+    position: relative;
+    z-index: 1;  
+}
+.rev{
+    line-height:30px;
+    margin: auto;
+    width:90%;
+    font-size:20px;
+    text-align:center;
+    color: white;
+    font-weight:500;
+    opacity:1;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);    
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+.revimg{
+    position:absolute;
+    bottom:0px;
+    left:240px;
+    height:800px;
+    width:800px;
+    opacity: 0.2;
+    z-index: 0;
+}
+.scroll{
+    margin:10px auto;
+    height:320px;
+    width: 98%;
+    padding: 5px 5px;
+    display: flex;
+    gap:30px;
+    /* border: 2px solid black; */
+    overflow:auto;
+    scrollbar-width:none;
+}
+.srol{
+    padding: 10px 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    flex-shrink: 0;
+     height: 95%;
+     width: 300px;
+     background-color: white;
+}
+.imgcard{
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    border:5px solid rgb(11, 228, 11);
+}
+.s{
+    color: #03558c;
+    background-color: #069afd;
+}
+.imgcard+p{
+    margin-top:17px;
+    font-size:18px;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+}
+ /* .page-content {
+    min-height: 500px;
+    padding:50px 0px 0px 0px;
+    width: 100%;
+} */
+.courses{
+    padding:70px 10%;
+}
+
+.courses h4{
+    text-align:center;
+    font-size:35px;
+    width:70%;
+    margin: 30px auto;
+    line-height:1.3;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+.focus{
+    font-size: 20px;
+}
+
+.courses h1 span{
+    background:#9bd645;
+    padding:4px 15px;
+    border-radius:18px;
+}
+
+.course-text{
+    margin:80px auto;
+    text-align:center;
+    line-height:1.4;
+    color:#555;
+    font-size:20px;
+}
+
+.course-container{
+    /* height: 800px; */
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:50px;
+}
+
+.course-card{
+    font-family: Arial, Helvetica, sans-serif;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-8px);
+}
+
+.card-banner{
+    background:linear-gradient(
+        135deg,
+        #8cc63e,
+        #0b6b2f,
+        #012f20
+    );
+
+    color:white;
+    /* padding:40px 25px; */
+    height: 150px;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:15px;
+}
+
+.card-banner i{
+    font-size:45px;
+}
+
+.card-banner h3{
+    font-size:30px;
+}
+
+.card-content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:20px 1px;
+}
+
+.badge{
+    background:#76a40c;
+    color:white;
+    padding:8px 15px;
+    border-radius:5px;
+    display:inline-block;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+.why-card-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit(minmax(250px,1fr)));
+}
+.card-content h2{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.card-content h4{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.card-content button{
+    width:90%;
+    padding:14px;
+    border:2px solid #9bd645;
+    background:white;
+    color:#6d9b09;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card-content button:hover{
+    background:#9bd645;
+    color:black;
+}
+.projects-section{
+    width:99%;
+    margin:40px auto;
+    text-align:center;
+}
+
+.hariharan{
+    max-width:90%;
+    margin:auto;
+    font-size:35px;
+    font-family: Arial, Helvetica, sans-serif;;
+    line-height:1.3;
+    font-weight:700;
+}
+
+.projects-section span{
+    background:#a6d94a;
+    padding:5px 12px;
+    border-radius:30px;
+}
+
+.description{
+    /* max-width:950px;
+    margin:25px auto 50px;
+    color:#555;
+    font-size:18px;
+    line-height:1.8; */
+    /* margin-top:100px; */
+    width:70%;
+    margin:70px auto;
+    text-align:center;
+    font-size:17px;
+    /* line-height:32px; */
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing:2px;
+    opacity: 0.9;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.project-card{
+    width:300px;
+}
+
+.image-box{
+    position:relative;
+    height:180px;
+    overflow:hidden;
+    border-radius:18px;
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.image-box:hover img{
+    transform:scale(1.1);
+}
+
+.overlay{
+    position:absolute;
+    /* inset: 0; */
+    top: 40px;
+    left: 50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    text-shadow:1px 1px 1px rgb(0, 0, 0);
+
+    /* padding-right:25px; */
+}
+
+.overlay h3{
+    color:#fff;
+    font-size:18px;
+    text-align:right;
+    margin-bottom:15px;
+}
+
+.play-btn{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+}
+
+.play-btn i{
+    color:#484b44;
+    font-size:18px;
+}
+
+.project-title{
+    margin-top:15px;
+    background:linear-gradient(#f2f2f2,#d9d9d9);
+    padding:12px;
+    border-radius:12px;
+    font-size:22px;
+    font-weight:700;
+    color:#0d2240;
+}
+.hariheader{
+    text-align:center;
+    margin:60px auto;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.why-title h2{
+    font-size:48px;
+    line-height:1.3;
+    font-weight:700;
+}
+
+.hariheader span{
+    background:#a4d74e;
+    padding:4px 15px;
+    border-radius:25px;
+}
+
+.why-card-grid{
+    width: 70%;
+    margin: auto;
+    display:grid;
+    grid-template-columns:(auto-fit(minmax(300px,1fr)));
+    gap:40px;
+}
+
+.why-card{
+    position:relative;
+    background:#fff;
+    padding:40px 30px;
+    border:2px solid #84c225;
+    border-radius:25px;
+    text-align:center;
+    transition:.4s;
+    overflow:hidden;
+}
+
+.shape{
+    position:absolute;
+    width:90px;
+    height:90px;
+    background:#8bd028;
+    border-radius:20px;
+    top:-15px;
+    left:-15px;
+    z-index:0;
+}
+
+/* .why-card img,
+.why-card h3,
+.why-card p{
+    position:relative;
+    z-index:1; */
+/* } */
+
+/* .why-card img{
+    width:70px;
+    margin-bottom:20px;
+} */
+
+.why-card h3{
+    font-size:28px;
+    margin-bottom:15px;
+    color:#111;
+}
+
+.why-card p{
+    color:#555;
+    line-height:1.8;
+}
+
+.why-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+    background-color: #8bd028;
+    color: white;
+}   
+
+/* .active-card{
+    /* background:#67c93d; */
+    /* color:#fff;
+}
+
+.active-card h3,
+.active-card p{ */
+    /* color:#fff; */
+/* } */
+
+.active-card:hover{
+    transform:translateY(-12px) scale(1.03);
+}
+
+/* @media(max-width:768px){
+
+    .why-title h2{
+        font-size:32px;
+    }
+
+    .why-card{
+        padding:30px 20px;
+    }
+
+    .why-card h3{
+        font-size:22px;
+    }
+
+} */
+
+/* @media(max-width:768px){
+
+    .projects-section h1{
+        font-size:32px;
+    }
+
+    .project-card{
+        width:100%;
+        max-width:350px;
+    }
+} */
+    /* Sidebar Social Floating Bar */
+    .social-bar {
+      position: fixed;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+      gap: 0.75rem;
+      z-index: 100;
+    }
+
+    .social-bar a {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .bg-insta { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
+    .bg-fb { background: #1877F2; }
+    .bg-yt { background: #FF0000; }
+    .bg-x { background: #000000; }
+    .bg-li { background: #0A66C2; }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-decoration: none;
+      font-size: 1.5rem;
+      z-index: 100;
+    }
+     .page-content {
+    min-height: 500px;
+    padding: 50px 0px 0px 0px;
+}
+
+.footer {
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    background: #4b2110;
+    color: #fff;
+    padding: 30px 45px 0;
+}
+
+
+
+.footer-container {
+    max-width: 1280px;
+    margin:auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.6fr
+        1fr
+        0.9fr
+        1fr
+        1.7fr;
+
+    gap: 40px;
+
+    padding-bottom:50px;
+}
+
+
+.footer-about {
+    padding-top: 5px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    width: 95px;
+    height: 95px;
+
+    border-radius: 50%;
+
+    background: #82cf22;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    background: white;
+}
+
+
+.brand h6 {
+    font-size: 21px;
+    line-height: 1.45;
+    font-weight: 700;
+}
+
+
+.footer-about p {
+    margin-top: 30px;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #fff;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+
+.footer-column ul {
+    list-style: none;
+}
+
+
+.footer-column ul li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:15px;
+}
+
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+.footer-column a:hover {
+    color: #8bd52c;
+}
+
+.social-links li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.social-links i {
+    width: 17px;
+    text-align: center;
+}
+
+.contact p {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 17px;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.contact p i {
+    width: 16px;
+    min-width: 16px;
+
+    margin-top: 4px;
+
+    color: #fff;
+}
+
+
+.contact p a {
+    font-size: 16px;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+    text-align: center;
+
+    padding: 14px 0 10px;
+}
+
+
+.copyright p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   XXL - 1200px AND ABOVE
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr) 200px minmax(0, 1fr);
+        width: 100%;
+        height: 700px;
+    }
+
+    .hero-heading {
+        font-size: 3.2rem;
+    }
+
+    .hero-title {
+        font-size: 1.35rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .second_header {
+        font-size: 32px;
+    }
+
+    .hari {
+        font-size: 30px;
+    }
+
+    h4 + p {
+        font-size: 17px;
+    }
+
+    .tab {
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 15px;
+    }
+
+    .features-card {
+        width: 510px;
+    }
+    .navbar{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+    }
+    .why-card-grid{
+    width: 70%;
+    margin: auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit(minmax(300px,1fr)));
+    gap:40px;
+}
+   
+}
+
+
+/* =========================================================
+   XL - 992px TO 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .logo-section h2 {
+        font-size: 26px;
+    }
+
+    .nav-links {
+        gap: 25px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .offer-btn,
+    .enroll-btn {
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr) 180px minmax(0, 1fr);
+        column-gap: 10px;
+        height: 650px;
+    }
+
+    .hero-heading {
+        font-size: 2.8rem;
+    }
+
+    .hero-title {
+        font-size: 1.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+
+    /* TRANSPARENT BOX
+       SIZE REMAINS 140 x 80 */
+
+    .boxcon {
+        left: auto;
+        right: 30px;
+        top: 120px;
+        gap: 70px;
+    }
+
+    .transprant {
+        width: 140px;
+        height: 80px;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .transprant i {
+        font-size: 30px;
+    }
+
+    .transprant p {
+        font-size: 1rem;
+    }
+
+
+    /* COURSE SMALL CARDS
+       SIZE REMAINS 150 x 88 */
+
+    .page1 {
+        gap: 25px;
+    }
+
+    .sec1card {
+        width: 150px;
+        height: 88px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+
+    /* TABLE */
+
+    .tablcon {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .fsr {
+        width: 95%;
+        min-width: 850px;
+    }
+
+    .tab {
+        font-size: 18px;
+        padding: 25px 12px;
+    }
+
+
+    /* HEADINGS */
+
+    .second_header {
+        font-size: 30px;
+    }
+
+    .hari {
+        font-size: 27px;
+        width: 70%;
+    }
+
+    h4 + p {
+        width: 88%;
+        font-size: 16px;
+    }
+
+
+    /* PROJECT */
+
+    .hariharan {
+        font-size: 32px;
+    }
+
+    .description {
+        width: 80%;
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   LG - 768px TO 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo-section h2 {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .nav-buttons {
+        gap: 8px;
+    }
+
+    .offer-btn,
+    .enroll-btn {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        grid-template-columns: 1fr 160px 1fr;
+        column-gap: 5px;
+        height: 600px;
+        padding: 10px;
+    }
+
+    .hero-heading {
+        font-size: 2.3rem;
+    }
+
+    .hero-title {
+        font-size: 1.05rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+
+    /* TRANSPARENT BOX
+       KEEP 140 x 80 */
+
+    .boxcon {
+        position: absolute;
+        left: auto;
+        right: 15px;
+        top: 110px;
+        gap: 45px;
+    }
+
+    .transprant {
+        width: 140px;
+        height: 80px;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .transprant i {
+        font-size: 27px;
+    }
+
+    .transprant p {
+        font-size: 0.9rem;
+    }
+
+
+    /* COURSE CARDS
+       KEEP 150 x 88 */
+
+    .page1 {
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .sec1card {
+        width: 150px;
+        height: 88px;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+
+
+    /* TABLE */
+
+    .tablcon {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .fsr {
+        width: 900px;
+        min-width: 900px;
+    }
+
+    .tab {
+        font-size: 17px;
+        padding: 25px 10px;
+    }
+
+
+    /* HEADINGS */
+
+    .second_header {
+        font-size: 27px;
+    }
+
+    .hari {
+        width: 80%;
+        font-size: 24px;
+    }
+
+    h4 + p {
+        width: 90%;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* PROJECT */
+
+    .hariharan {
+        font-size: 29px;
+    }
+
+    .description {
+        width: 85%;
+        font-size: 15px;
+    }
+
+
+    /* COURSES */
+
+    .courses {
+        padding: 50px 5%;
+    }
+
+    .courses h4 {
+        width: 85%;
+        font-size: 30px;
+    }
+
+    .course-text {
+        font-size: 17px;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+
+/* =========================================================
+   MD - 576px TO 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .navbar {
+        padding: 10px 12px;
+        flex-wrap: wrap;
+    }
+
+    .logo-section h2 {
+        font-size: 21px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-buttons {
+        gap: 6px;
+    }
+
+    .offer-btn,
+    .enroll-btn {
+        font-size: 12px;
+        padding: 9px 12px;
+    }
+
+
+    /* HERO
+       Change columns, NOT BOX SIZE */
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+        min-height: 650px;
+        padding: 20px 15px;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 1rem;
+    }
+
+    .hero-subtitle {
+        width: 95%;
+        font-size: 0.88rem;
+    }
+
+
+    /* TRANSPARENT BOXES */
+
+    .hero_ai {
+        position: relative;
+        min-height: 280px;
+    }
+
+    .boxcon {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .transprant {
+        width: 140px;
+        height: 80px;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .transprant i {
+        font-size: 26px;
+    }
+
+    .transprant p {
+        font-size: 0.85rem;
+    }
+
+
+    /* COURSE CARDS */
+
+    .page1 {
+        gap: 18px;
+        padding: 0 10px;
+    }
+
+    .sec1card {
+        width: 150px;
+        height: 88px;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+
+
+    /* TABLE */
+
+    .tablcon {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .fsr {
+        width: 900px;
+        min-width: 900px;
+    }
+
+    .tab {
+        font-size: 16px;
+        padding: 23px 10px;
+    }
+
+
+    /* HEADINGS */
+
+    .second_header {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    .hari {
+        width: 90%;
+        font-size: 22px;
+        height: auto;
+    }
+
+    h4 + p {
+        width: 92%;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* REVIEWS */
+
+    h5 {
+        font-size: 1.6rem;
+        margin: 30px 15px;
+    }
+
+    .rev {
+        width: 90%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+
+    /* PROJECT */
+
+    .hariharan {
+        font-size: 26px;
+    }
+
+    .description {
+        width: 90%;
+        font-size: 14px;
+    }
+
+
+    /* COURSE SECTION */
+
+    .courses {
+        padding: 45px 20px;
+    }
+
+    .courses h4 {
+        width: 90%;
+        font-size: 27px;
+    }
+
+    .course-text {
+        font-size: 16px;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+
+/* =========================================================
+   SM - 480px TO 575px
+========================================================= */
+
+@media (min-width: 480px) and (max-width: 575px) {
+
+    .navbar {
+        padding: 9px 10px;
+        flex-wrap: wrap;
+    }
+
+    .logo-section h2 {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .nav-buttons {
+        gap: 5px;
+    }
+
+    .offer-btn,
+    .enroll-btn {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: 650px;
+        padding: 15px 10px;
+    }
+
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-title {
+        font-size: 0.95rem;
+    }
+
+    .hero-subtitle {
+        width: 95%;
+        font-size: 0.84rem;
+    }
+
+
+    /* TRANSPARENT BOX
+       STILL 140 x 80 */
+
+    .hero_ai {
+        position: relative;
+        min-height: 300px;
+    }
+
+    .boxcon {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .transprant {
+        width: 140px;
+        height: 80px;
+        margin: 8px;
+        padding: 15px;
+    }
+
+    .transprant i {
+        font-size: 24px;
+    }
+
+    .transprant p {
+        font-size: 0.78rem;
+    }
+
+
+    /* SMALL COURSE CARDS
+       STILL 150 x 88 */
+
+    .page1 {
+        gap: 12px;
+        padding: 0 8px;
+    }
+
+    .sec1card {
+        width: 150px;
+        height: 88px;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+
+    /* TABLE */
+
+    .tablcon {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .fsr {
+        width: 900px;
+        min-width: 900px;
+    }
+
+    .tab {
+        font-size: 15px;
+        padding: 22px 9px;
+    }
+
+
+    /* HEADINGS */
+
+    .second_header {
+        font-size: 21px;
+        padding: 0 8px;
+    }
+
+    .hari {
+        width: 92%;
+        font-size: 20px;
+        height: auto;
+    }
+
+    h4 + p {
+        width: 93%;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* REVIEW */
+
+    h5 {
+        font-size: 1.4rem;
+        margin: 25px 10px;
+    }
+
+    .rev {
+        width: 92%;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+
+    /* PROJECT */
+
+    .hariharan {
+        font-size: 23px;
+    }
+
+    .description {
+        width: 92%;
+        font-size: 13px;
+    }
+
+
+    /* COURSES */
+
+    .courses {
+        padding: 40px 15px;
+    }
+
+    .courses h4 {
+        width: 95%;
+        font-size: 24px;
+    }
+
+    .course-text {
+        font-size: 15px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
+/* =========================================================
+   XS - BELOW 480px
+========================================================= */
+
+@media (max-width: 479px) {
+
+    .navbar {
+        padding: 8px;
+        flex-wrap: wrap;
+    }
+
+    .logo-section {
+        gap: 7px;
+    }
+
+    .logo-section img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-section h2 {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .offer-btn,
+    .enroll-btn {
+        font-size: 10px;
+        padding: 7px 9px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: 650px;
+        padding: 12px 8px;
+    }
+
+    .hero-heading {
+        font-size: 1.55rem;
+        line-height: 1.2;
+    }
+
+    .hero-title {
+        font-size: 0.9rem;
+    }
+
+    .hero-subtitle {
+        width: 96%;
+        font-size: 0.78rem;
+    }
+
+
+    /* TRANSPARENT BOX
+       NEVER CHANGE SIZE */
+
+    .hero_ai {
+        position: relative;
+        min-height: 350px;
+    }
+
+    .boxcon {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .transprant {
+        width: 140px;
+        height: 80px;
+        margin: 5px;
+        padding: 15px;
+    }
+
+    .transprant i {
+        font-size: 22px;
+    }
+
+    .transprant p {
+        font-size: 0.72rem;
+    }
+
+
+    /* COURSE CARDS
+       NEVER CHANGE SIZE */
+
+    .page1 {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .sec1card {
+        width: 150px;
+        height: 88px;
+    }
+
+    .para {
+        font-size: 11px;
+    }
+
+
+    /* TABLE
+       KEEP TABLE CELLS SAME STRUCTURE.
+       ALLOW HORIZONTAL SCROLL. */
+
+    .tablcon {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .fsr {
+        width: 900px;
+        min-width: 900px;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 20px 8px;
+    }
+
+
+    /* HEADINGS */
+
+    .second_header {
+        font-size: 19px;
+        line-height: 1.3;
+        padding: 0 8px;
+    }
+
+    .hari {
+        width: 94%;
+        font-size: 18px;
+        height: auto;
+        line-height: 1.4;
+    }
+
+    h4 + p {
+        width: 94%;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* REVIEW */
+
+    h5 {
+        font-size: 1.2rem;
+        margin: 20px 8px;
+    }
+
+    .rev {
+        width: 94%;
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+
+    /* PROJECT */
+
+    .hariharan {
+        font-size: 21px;
+    }
+
+    .description {
+        width: 94%;
+        font-size: 12px;
+    }
+
+
+    /* COURSE SECTION */
+
+    .courses {
+        padding: 35px 10px;
+    }
+
+    .courses h4 {
+        width: 96%;
+        font-size: 21px;
+    }
+
+    .course-text {
+        font-size: 14px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* SOCIAL */
+
+    .social-bar {
+        right: 8px;
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .social-bar a {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+
+    .whatsapp-btn {
+        right: 10px;
+        bottom: 10px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+     h4{
+        font-size: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+/* =========================================================
+   IMPORTANT CARD-SIZE PROTECTION
+   These sizes are intentionally the SAME in every screen.
+========================================================= */
+
+.transprant {
+    width: 140px !important;
+    height: 80px !important;
+    flex-shrink: 0;
+}
+
+.sec1card {
+    width: 150px !important;
+    height: 88px !important;
+    flex-shrink: 0;
+}
+
+.tab {
+    box-sizing: border-box;
+}
+
+.course-card {
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PREVENT TEXT FROM BREAKING THE CARD LAYOUT
+========================================================= */
+
+.transprant p,
+.para,
+.tab,
+.course-card,
+.sec1card {
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+/* =========================================================
+   TABLE MOBILE SCROLL
+========================================================= */
+
+.tablcon::-webkit-scrollbar {
+    height: 6px;
+}
+
+.tablcon {
+    scrollbar-width: thin;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   TOP BAR
+   ALWAYS CENTRE
+========================================================= */
+
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   HERO AI
+   ALWAYS CENTRE
+========================================================= */
+
+.hero_ai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   TRANSPARENT BOX
+   ORIGINAL SIZE = 140 x 80
+   NEVER CHANGE THIS SIZE
+========================================================= */
+
+.transprant {
+    width: 140px !important;
+    height: 80px !important;
+
+    flex: 0 0 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SEC1 CARD
+   ORIGINAL SIZE = 150 x 88
+   NEVER CHANGE THIS SIZE
+========================================================= */
+
+.sec1card {
+    width: 150px !important;
+    height: 88px !important;
+
+    flex: 0 0 150px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TABLE
+   TABLE STRUCTURE NEVER SHRINKS
+========================================================= */
+
+.tablcon {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fsr {
+    min-width: 900px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   XXL
+   1200px AND ABOVE
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    /* TOP BAR */
+
+    .top-bar {
+        justify-content: center;
+        font-size: 16px;
+    }
+    .navbar{
+        display: flex;
+    }
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+        display: grid;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            200px
+            minmax(0, 1fr);
+
+        justify-content: center;
+        align-items: center;
+
+        column-gap: 15px;
+    }
+
+
+    .hero_ai {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* HERO FONT */
+
+    .hero-title {
+        font-size: 1.35rem;
+    }
+
+    .hero-heading {
+        font-size: 3.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+
+    /* TRANSPARENT BOX */
+
+    .boxcon {
+        position: static;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 96px;
+    }
+
+    .transprant {
+        width: 140px !important;
+        height: 80px !important;
+    }
+
+    .transprant i {
+        font-size: 33px;
+    }
+
+    .transprant p {
+        font-size: 1.1rem;
+    }
+
+
+    /* SMALL CARDS */
+
+    .page1 {
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .sec1card {
+        width: 150px !important;
+        height: 88px !important;
+    }
+
+    .para {
+        font-size: 15px;
+    }
+
+
+    /* TABLE */
+
+    .tab {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   XL
+   992px - 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* TOP BAR */
+
+    .top-bar {
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+    }
+    .navbar{
+        display: flex;
+    }
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            180px
+            minmax(0, 1fr);
+
+        column-gap: 10px;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .hero_ai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* HERO FONT */
+
+    .hero-title {
+        font-size: 1.2rem;
+    }
+
+    .hero-heading {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+
+    /* BOX CONTAINER */
+
+    .boxcon {
+        position: static;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 70px;
+    }
+
+
+    /* TRANSPARENT */
+
+    .transprant {
+        width: 140px !important;
+        height: 80px !important;
+    }
+
+    .transprant i {
+        font-size: 30px;
+    }
+
+    .transprant p {
+        font-size: 1rem;
+    }
+
+
+    /* CARD */
+
+    .page1 {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .sec1card {
+        width: 150px !important;
+        height: 88px !important;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+
+    /* TABLE */
+
+    .tab {
+        font-size: 18px;
+        padding: 25px 12px;
+    }
+
+
+    /* TABLE SCROLL */
+
+    .tablcon {
+        overflow-x: auto;
+    }
+
+    .fsr {
+        min-width: 900px;
+    }
+}
+
+
+/* =========================================================
+   LG
+   768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* TOP BAR */
+
+    .top-bar {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+    }
+    .navbar{
+        display: flex;
+    }
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            160px
+            minmax(0, 1fr);
+
+        column-gap: 5px;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* HERO AI */
+
+    .hero_ai {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* HERO FONT */
+
+    .hero-title {
+        font-size: 1.05rem;
+    }
+
+    .hero-heading {
+        font-size: 2.3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+
+    /* BOX */
+
+    .boxcon {
+        position: static;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 45px;
+    }
+
+
+    /* TRANSPARENT BOX SAME SIZE */
+
+    .transprant {
+        width: 140px !important;
+        height: 80px !important;
+    }
+
+    .transprant i {
+        font-size: 27px;
+    }
+
+    .transprant p {
+        font-size: 0.9rem;
+    }
+
+
+    /* CARDS */
+
+    .page1 {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .sec1card {
+        width: 150px !important;
+        height: 88px !important;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+
+
+    /* TABLE */
+
+    .tablcon {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .fsr {
+        width: 900px;
+        min-width: 900px;
+    }
+
+    .tab {
+        font-size: 17px;
+        padding: 25px 10px;
+    }
+}
+
+
+/* =========================================================
+   MD
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* TOP BAR */
+
+    .top-bar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        font-size: 13px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        height: auto;
+        min-height: 650px;
+
+        padding: 20px 15px;
+    }
+
+
+    /* HERO AI CENTRE */
+
+    .hero_ai {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* HERO FONT */
+
+    .hero-title {
+        font-size: 1rem;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.88rem;
+    }
+
+
+    /* BOX CONTAINER */
+
+    .boxcon {
+        position: static;
+
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+    }
+
+
+    /* TRANSPARENT SAME SIZE */
+
+    .transprant {
+        width: 140px !important;
+        height: 80px !important;
+
+        margin: 8px;
+    }
+
+    .transprant i {
+        font-size: 26px;
+    }
+
+    .transprant p {
+        font-size: 0.85rem;
+    }
+
+
+    /* CARDS */
+
+    .page1 {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 18px;
+    }
+
+    .sec1card {
+        width: 150px !important;
+        height: 88px !important;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+
+
+    /* TABLE */
+
+    .tablcon {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .fsr {
+        width: 900px;
+        min-width: 900px;
+    }
+
+    .tab {
+        font-size: 16px;
+        padding: 23px 10px;
+    }
+}
+
+
+/* =========================================================
+   SM
+   480px - 575px
+========================================================= */
+
+@media (min-width: 480px) and (max-width: 575px) {
+
+    /* TOP BAR */
+
+    .top-bar {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        height: auto;
+        min-height: 650px;
+
+        padding: 15px 10px;
+    }
+
+
+    /* HERO AI */
+
+    .hero_ai {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+
+    /* HERO FONT */
+
+    .hero-title {
+        font-size: 0.95rem;
+    }
+
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.84rem;
+    }
+
+
+    /* BOX CONTAINER */
+
+    .boxcon {
+        position: static;
+
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 12px;
+    }
+
+
+    /* TRANSPARENT */
+
+    .transprant {
+        width: 140px !important;
+        height: 80px !important;
+
+        margin: 6px;
+    }
+
+    .transprant i {
+        font-size: 24px;
+    }
+
+    .transprant p {
+        font-size: 0.78rem;
+    }
+
+
+    /* CARDS */
+
+    .page1 {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    .sec1card {
+        width: 150px !important;
+        height: 88px !important;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+
+    /* TABLE */
+
+    .tablcon {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .fsr {
+        width: 900px;
+        min-width: 900px;
+    }
+
+    .tab {
+        font-size: 15px;
+        padding: 22px 9px;
+    }
+}
+
+
+/* =========================================================
+   XS
+   BELOW 480px
+========================================================= */
+
+@media (max-width: 479px) {
+
+    /* TOP BAR
+       ALWAYS CENTRE */
+
+    .top-bar {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        font-size: 11px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        height: auto;
+        min-height: 650px;
+
+        padding: 12px 8px;
+    }
+
+
+    /* HERO AI
+       ALWAYS CENTRE */
+
+    .hero_ai {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* HERO FONT */
+
+    .hero-title {
+        font-size: 0.9rem;
+    }
+
+    .hero-heading {
+        font-size: 1.55rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 0.78rem;
+    }
+
+
+    /* BOX CONTAINER */
+
+    .boxcon {
+        position: static;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 5px;
+    }
+
+
+    /* TRANSPARENT
+       SAME 140 x 80 */
+
+    .transprant {
+        width: 140px !important;
+        height: 80px !important;
+
+        margin: 5px auto;
+    }
+
+    .transprant i {
+        font-size: 22px;
+    }
+
+    .transprant p {
+        font-size: 0.72rem;
+    }
+
+
+    /* SEC1 CARD
+       SAME 150 x 88 */
+
+    .page1 {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 150px);
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    .sec1card {
+        width: 150px !important;
+        height: 88px !important;
+    }
+
+    .para {
+        font-size: 11px;
+    }
+
+
+    /* TABLE */
+
+    .tablcon {
+        width: 100%;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .fsr {
+        width: 900px;
+        min-width: 900px;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 20px 8px;
+    }
+
+
+    /* HEADINGS */
+
+    .second_header {
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .hari {
+        width: 94%;
+        font-size: 18px;
+        height: auto;
+    }
+
+    h4 + p {
+        width: 94%;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* REVIEW */
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    .rev {
+        width: 94%;
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+
+    /* PROJECT */
+
+    .hariharan {
+        font-size: 21px;
+    }
+
+    .description {
+        width: 94%;
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   FINAL PROTECTION
+   THESE MUST NEVER CHANGE SIZE
+========================================================= */
+
+.transprant {
+    width: 140px !important;
+    height: 80px !important;
+    min-width: 140px;
+}
+    /* Footer */
+    /* footer {
+      background: var(--primary);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+    } */
+    
+
+    /* Responsive Adjustments */
+    /* @media (max-width: 768px) {
+      .hero-heading { font-size: 2rem; }
+      .nav-links { display: none; }
+      .features-card { grid-template-columns: 1fr; }
+    } */

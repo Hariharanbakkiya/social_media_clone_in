@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrollment Form</title>
+    <style>
+        /* General page layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* The main white card */
+        .card {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .close-btn {
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        /* Form Layout */
+        .row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .field {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Text Labels */
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .star {
+            color: red;
+        }
+
+        /* Input Boxes & Dropdowns */
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+
+        /* Submit Button */
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submit-btn {
+            background-color: #4a150b;
+            color: white;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #330e07;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Header -->
+        <div class="header">
+            <h2>Enroll Now</h2>
+            <button class="close-btn">&times;</button>
+        </div>
+
+        <!-- Form Start -->
+        <form>
+            <!-- Row 1: Name and Email -->
+            <div class="row">
+                <div class="field">
+                    <label>Full Name <span class="star">*</span></label>
+                    <input type="text" placeholder="Enter Your Full Name" required>
+                </div>
+                <div class="field">
+                    <label>Email <span class="star">*</span></label>
+                    <input type="email" placeholder="Enter Your Email" required>
+                </div>
+            </div>
+
+            <!-- Row 2: Mobile and Courses -->
+            <div class="row">
+                <div class="field">
+                    <label>Mobile Number <span class="star">*</span></label>
+                    <input type="tel" placeholder="Enter Mobile Number" required>
+                </div>
+                <div class="field">
+                    <label>Courses <span class="star">*</span></label>
+                    <select required>
+                        <option value="">Select a course</option>
+                        <option value="c">C / C++</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Row 3: Message -->
+            <div class="field">
+                <label>Message</label>
+                <textarea placeholder="Message"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="btn-container">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
